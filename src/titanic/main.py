@@ -1,6 +1,4 @@
-def main():
-    print("Hello from kto-titanic!")
-
-
-if __name__ == "__main__":
-    main()
+import mlflow
+mlflow.autolog()
+with mlflow.start_run():
+    print('toto')
